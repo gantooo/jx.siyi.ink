@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="30;url=http://siyi.ink">
+  <title>思忆影视，不可思忆！</title>
+  <link rel="shortcut icon" href="https://icon.ganto.cn/g.png" type="image/x-icon">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    main{
+      width: 100%;
+      max-width: 666px;
+      margin: 100px auto;
+      text-align: center;
+    }
+    img{
+      width: 100px;
+      cursor: pointer;
+    }
+    .tim{
+      display: inline-block;
+      font-style: normal;
+      color: red;
+      font-size: 20px;
+    }
+    p{
+      margin: 20px 0;
+    }
+    b{
+      font-size: 20px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    let i = 0;
+    let t = 30;
+    let tim = self.setInterval(function(){
+      i++;
+      document.getElementsByClassName("tim")[0].innerHTML = i;
+      if(i == t){
+        clearInterval(tim);
+        document.getElementsByClassName("txt")[0].innerHTML = "跳转中..."
+      }
+    },1000);
+  </script>
+
+  <main>
+    <a href="http://siyi.ink">
+      <img src="http://siyi.ink/upload/site/20210918-1/dea19bce2a65d319a78752df46323e46.png" alt="思忆影视" title="思忆影视">
+    </a>
+    <p>思忆影视，不可思忆！请记住思忆影视官网：<a href="http://siyi.ink">http://siyi.ink</a></p>
+    <p>页面将在<i class="tim">0</i>/30秒后，进行跳转。也可点击上方官网链接，进行跳转。</p>
+    <b class="txt"></b>
+  </main>
+</body>
+</html>
