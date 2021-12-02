@@ -1,0 +1,182 @@
+:root{
+	--w:888px;/* 页面宽度，自行调整 */
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+	outline: none;
+}
+body{
+	background-color: #222222;
+}
+body,html{
+	font-weight: 300;
+}
+.box{
+}
+main{
+  width: 100%;
+  max-width: var(--w);
+  margin: 0 auto;
+  padding: 0 20px;
+	position: relative;
+}
+header{
+  width: 100%;
+  text-align: center;
+	padding: 10px 0;
+}
+header .title{
+	font-size: 30px;
+	color: #AAAAAA;
+	margin: 20px 0;
+}
+.title span{
+	position: relative;
+}
+.title img{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: -50px;
+	top: -8px;
+}
+header .i{
+	color: #AAAAAA;
+	font-size: 14px;
+}
+section{
+  width: 100%;
+}
+#apiList{
+  display: none;
+}
+.ifr{
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.txt{
+	width: 100%;
+	height: 100%;
+	background-color: #555555;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #aaaaaa;
+}
+iframe{
+	display: block;
+}
+.jx{
+	padding: 20px 0;
+	text-align: center;
+}
+.jx span{
+  display: inline-block;
+	background-color: #555555;
+  cursor: pointer;
+  margin: 2px;
+	padding: 7px 20px;
+  border-radius: 8px;
+	font-size: 14px;
+	color: #aaaaaa;
+}
+.jx span:hover{
+	background-color: #ff6b91;
+	color: #eeeeee;
+}
+.jx span:active{
+	background-color: #1e90ff;
+	color: #eeeeee;
+}
+.jx .active{
+	background-color: #1e90ff;
+	color: #eeeeee;
+}
+.inp{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	padding-bottom: 20px;
+}
+.inp input{
+  width: 100%;
+  height: 40px;
+  border: 2px solid #555555;
+	background-color: #555555;
+  border-radius: 8px 0 0 8px;
+	font-size: 16px;
+	border-right: 0;
+	color: white;
+	padding: 0 10px;
+}
+.inp button{
+	width: 80px;
+	height: 40px;
+	border: 0;
+	background-color: #1e90ff;
+	border-radius: 0 8px 8px 0;
+	border-left: 0;
+	cursor: pointer;
+	color: #eeeeee;
+}
+.inp button:hover{
+	background-color: #ff6b91;
+}
+.inp button:active{
+	background-color: #eb2f06;
+}
+footer{
+	background-color: #555555;
+	padding: 20px 10px;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 14px;
+}
+footer span{
+	color: #ff6b81;
+}
+.syys{
+	margin-top: 10px;
+}
+footer span a,.syys a{
+	color: #1890ff;
+}
+.syys img{
+	max-width: 100px;
+}
+.notice{
+	position: absolute;
+	top: 10px;
+	right: -60px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 1s;
+	border: 2px solid #1890ff;
+}
+.notice a{
+	color: #1890ff;
+	font-weight: 900;
+}
+.notice .romve{
+	position: absolute;
+	top: -8px;
+	right: -8px;
+	color: #1890ff;
+}
+@media (max-width: 1200px) {
+	.notice{
+		right: 20px;
+	}
+}
