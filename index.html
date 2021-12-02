@@ -2,63 +2,66 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="30;url=http://siyi.ink">
-  <title>思忆影视，不可思议！</title>
-  <link rel="shortcut icon" href="https://icon.ganto.cn/g.png" type="image/x-icon">
-  <style>
-    *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    main{
-      width: 100%;
-      max-width: 666px;
-      margin: 100px auto;
-      text-align: center;
-    }
-    img{
-      width: 100px;
-      cursor: pointer;
-    }
-    .tim{
-      display: inline-block;
-      font-style: normal;
-      color: red;
-      font-size: 20px;
-    }
-    p{
-      margin: 20px 0;
-    }
-    b{
-      font-size: 20px;
-      color: green;
-    }
-  </style>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>思忆影视解析</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" href="http://siyi.ink/upload/site/20210918-1/71ea415b01aa749ec1f7607d6b4db419.png">
+	<link rel="stylesheet" type="text/css" href="https://ganto.cn/i/css/font-awesome.css">
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?8f10dd021122bef4906d5cc30ece60c0";
+			var s = document.getElementsByTagName("script")[0]; 
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+
 </head>
 <body>
-  <script>
-    let i = 0;
-    let t = 30;
-    let tim = self.setInterval(function(){
-      i++;
-      document.getElementsByClassName("tim")[0].innerHTML = i;
-      if(i == t){
-        clearInterval(tim);
-        document.getElementsByClassName("txt")[0].innerHTML = "跳转中..."
-      }
-    },1000);
-  </script>
-
-  <main>
-    <a href="http://siyi.ink">
-      <img src="http://siyi.ink/upload/site/20210918-1/dea19bce2a65d319a78752df46323e46.png" alt="思忆影视" title="思忆影视">
-    </a>
-    <p>思忆影视，不可思议！请记住思忆影视官网：<a href="http://siyi.ink">http://siyi.ink</a></p>
-    <p>页面将在<i class="tim">0</i>/30秒后，进行跳转。也可点击上方官网链接，进行跳转。</p>
-    <b class="txt"></b>
-  </main>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+  <script src="js/index.js"></script>
+	
+	<div class="box">
+		<main>
+			<div class="notice">
+				<i class="romve fa fa-times" aria-hidden="true"></i>
+				<a target="_blank" href="help/index.html">帮助</a>
+			</div>
+			<header>
+				<div class="title"><span><img src="http://siyi.ink/upload/site/20210918-1/71ea415b01aa749ec1f7607d6b4db419.png" alt="思忆影视" title="思忆影视">思忆影视解析</span></div>
+				<p class="i">请先输入VIP视频链接，然后选择解析线路，并点击解析</p>
+				<p class="i">支持：腾讯、爱奇艺、优酷、哔哩哔哩、芒果TV、搜狐TV</p>
+			</header>
+			<section>
+				<div class="ifr">
+					<p class="txt">Video ^9^</p>
+					<iframe id="g" src="" allowfullscreen frameborder="0" ></iframe>
+				</div>
+				<div class="jx"></div>
+				<div class="inp">
+					<input id="urlV" type="text" placeholder="请输入VIP视频链接">
+					<button type="button">解析</button>
+				</div>
+			</section>
+			<footer>
+				<span>发现不可使用的解析线路,请记得反馈邮箱: gantooo#outlook.com (#换成@)；或者站点<a target="blank" href="http://www.siyi.ink/gbook/">留言区反馈</a></span>
+				<p class="syys">
+					<a target="blank" href="http://www.siyi.ink">
+						<img src="http://siyi.ink/upload/site/20210918-1/dea19bce2a65d319a78752df46323e46.png" alt="思忆影视" title="思忆影视">
+					</a>
+				</p>
+			</footer>
+			<textarea id="apiList">
+				https://jx.13tv.top/vip/?url=
+				https://dy.tvkuys.com/?url=
+				https://www.yingdog.com/?url=
+				http://www.wmxz.wang/video.php?url=
+				http://17kyun.com/api.php?url=
+				http://vip.jianjians.com/?url=
+				https://lecurl.cn/?url=
+			</textarea>
+		</main>
+	</div>
 </body>
 </html>
