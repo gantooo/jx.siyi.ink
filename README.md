@@ -1,3 +1,5 @@
-```
-跳转siyi.ink
+```js
+(function(){
+  console.log('jx.siyi.ink');
+})();
 ```
